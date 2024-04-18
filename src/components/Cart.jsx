@@ -4,7 +4,7 @@ function Cart() {
   return (
     <>
         <h1>Cart</h1>
-        <table className='table'>
+        <table className='table w-50'>
             <thead>
                 <tr>
                     <th>Product</th>

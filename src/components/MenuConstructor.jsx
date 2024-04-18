@@ -9,7 +9,7 @@ function MenuConstructor({data}) {
 
   return (
     <>
-        <table className='table'>
+        <table className='table w-50'>
             <thead>
                 <tr>
                     <th>{nameField}</th>
