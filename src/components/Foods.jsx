@@ -10,7 +10,7 @@ function Foods() {
 
   // fetchs the data needed for the table construction
   useEffect(()=>{
-    fetch("https://w7liugfeo2.execute-api.eu-west-1.amazonaws.com/dev/drinks")
+    fetch("https://w7liugfeo2.execute-api.eu-west-1.amazonaws.com/dev/foods")
     .then(response => response.json())
     .then(data => setData(data))
  },[]);
