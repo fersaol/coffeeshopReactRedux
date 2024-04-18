@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import MenuConstructor from './MenuConstructor'
 
-const dataDrinks = {
-  name:"Cola",
-  size:"Large",
-  price:5,
 
-}
 
 function Drinks() {
+
+  const [data,setData] = useState([])
+
+  useEffect(()=>{
+    fetch("https://w7liugfeo2.execute-api.eu-west-1.amazonaws.com/dev/drinks")
+    .then(response => response.json())
+    .then(data => setData(data))
+ },[]);
+
   return (
     <>
-    <MenuConstructor data={dataDrinks}/>
-  </>
+    <MenuConstructor data={data}/>
+    </>
   )
 }
 

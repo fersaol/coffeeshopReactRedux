@@ -18,13 +18,18 @@ function MenuConstructor({data}) {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>{data.name}</td>
-                    <td>{data.size}</td>
-                    <td>{data.price}</td>
-                    <td><button className='btn btn-success'>+</button></td>
-                    <td><button className='btn btn-danger'>-</button></td>
-                </tr>
+                {
+                    data.map((item)=>
+                        <tr>
+                            <td>{item["name"]["S"]}</td>
+                            <td>{item["size"]["S"]}</td>
+                            <td>{item["price"]["N"]}</td>
+                            <td><button className='btn btn-success'>+</button></td>
+                            <td><button className='btn btn-danger'>-</button></td>
+                        </tr>
+                            )
+                }
+
             </tbody>
         </table>
     </>
