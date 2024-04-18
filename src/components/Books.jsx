@@ -1,10 +1,10 @@
-import React from 'react'
-import MenuConstructor from './MenuConstructor'
+import React, { useEffect, useState } from 'react'
+// import MenuConstructor from './MenuConstructor'
 
 
 
 function Books() {
-  /*
+/*
   // stores the data in a variable
   const [data,setData] = useState([])
 
@@ -14,10 +14,10 @@ function Books() {
     .then(response => response.json())
     .then(data => setData(data))
  },[]);
- */
+*/
   return (
     <>
-    {/*<MenuConstructor data={dataBooks}/>*/}
+    {/*<MenuConstructor data={data}/>*/}
     <div>In development</div>
   </>
   )
